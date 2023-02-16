@@ -18,7 +18,7 @@ void PrintArray(int[] array)
     System.Console.WriteLine("[" + string.Join(", ", array) + "]");
 }
 
-int PrintResult(int[] array)
+int FindResult(int[] array)
 {
     int N = 0;
     for (int i = 0; i < array.Length; i++)
@@ -31,5 +31,4 @@ int PrintResult(int[] array)
 
 int[] myArray = GenerateArray(5, 100, 1000);
 PrintArray(myArray);
-int n = PrintResult(myArray);
-System.Console.WriteLine("Количество четных чисел в массиве - " + n);
+System.Console.WriteLine("Количество четных чисел в массиве - " + FindResult(myArray));
